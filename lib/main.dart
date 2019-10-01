@@ -73,6 +73,8 @@ void main() {
                     ),
                   ],
                 ),
+                Text('Politics     8h Ago',
+                  textAlign: TextAlign.left,),
 
                 blackline,blackline,
 
@@ -106,7 +108,11 @@ void main() {
                     ),
                   ],
                 ),
+                Text('Politics     8h Ago',
+                  textAlign: TextAlign.left,),
+
                 blackline,blackline,
+
                 Text(
                   ' Saudi crown prince denies ordering Jamal Khashoggi killing',
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -137,6 +143,8 @@ void main() {
                     ),
                   ],
                 ),
+                Text('Politics     8h Ago',
+                  textAlign: TextAlign.left,),
               ],
             ),
           ),
