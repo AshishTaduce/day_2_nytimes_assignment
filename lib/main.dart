@@ -20,7 +20,7 @@ import 'package:flutter/painting.dart';
 void main() {
   Container blackline = Container(
     width: double.infinity,
-    height: 2,
+    height: 3,
     color: Colors.black,
     child: Row(),
     margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
@@ -38,91 +38,107 @@ void main() {
             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
           ),
         ),
-        body: Container(
-          padding: new EdgeInsets.all(8.0),
-          //margin:
-          child: Column(
-            children: <Widget>[
-              Row(
-                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      Text(
-                        'PM Modi seeks ideas for his IIT-Madras \n',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'In Chennai, PM Modi would also \n participate in the prize distribution \nceremony  of the Singapore-India Hackathon.   ',
-                        textAlign: TextAlign.left,
-                        softWrap: true,
-                      ),
-                    ],
-                  ),
-                  Image.network(
-                    'https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/09/29/Pictures/pm-narendra-modi-smart-cities-mission_ee684f10-e2a8-11e9-93be-d8edb8f85faf.jpg',
-                    width: 100,
-                    height: 50,
-                  ),
-                ],
-              ),
-              blackline,
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                //mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      Text(
-                        'Stranded Locals and Warning of More Rains \n',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'Patna Nagar Nigam personnel, donning \nyellow raincoats, could be seen at \nvarious spots trying to unclog the \nmanholes that have been choked \nby polythene and debris.',
-                        textAlign: TextAlign.left,
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                Text(
+                  'PM Modi seeks ideas for his IIT-Madras ',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                  //textAlign: TextAlign.left,
+                ),
+                Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
 
+                      child: Expanded(
+                        flex: 7,
+                        child: Container(
+                          child: Text(
+                            'In Chennai, PM Modi would also \n participate in the prize distribution \nceremony  of the Singapore-India Hackathon.   ',
+                          ),
+                        ),
                       ),
-                    ],
-                  ),
-                  Image.network(
-                    'https://images.news18.com/ibnlive/uploads/2019/09/Flood-Cartoon1.jpg',
-                    width: 150,
-                    height: 75,
-                  ),
-                ],
-              ),
-              blackline,
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                //mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      Text(
-                        'Saudi crown prince denies ordering Jamal Khashoggi killing \n',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        child: Image.network(
+                          'https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/09/29/Pictures/pm-narendra-modi-smart-cities-mission_ee684f10-e2a8-11e9-93be-d8edb8f85faf.jpg',
+                        ),
                       ),
-                      Text(
-                        "Some think that I should know what \n 3 million people working for the Saudi governmen\nt do daily",
-                        textAlign: TextAlign.left,
-                        widt
-                      ),
-                    ],
-                  ),
-                  Image.network(
+                    ),
+                  ],
+                ),
 
-                    'https://www.thehindu.com/news/national/73kpsr/article26333229.ece/ALTERNATES/FREE_460/TH22KRASALMAN',
-                    width: 150,
-                    height: 75,
-                  ),
-                ],
-              ),
+                blackline,blackline,
 
-           ],
+                Text(
+                  'Flooded Roads, Stranded Locals and Warning of More Rains',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.left,
+                ),
+                Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+
+                      child: Expanded(
+                        flex: 7,
+                        child: Container(
+                          child: Text(
+                            'Patna Nagar Nigam personnel, donning yellow raincoats, could be seen at various spots trying to unclog the manholes that have been choked by polythene and debris.',
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        child: Image.network(
+                          'https://images.news18.com/ibnlive/uploads/2019/09/Flood-Cartoon1.jpg',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                blackline,blackline,
+                Text(
+                  ' Saudi crown prince denies ordering Jamal Khashoggi killing',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.left,
+                ),
+                Row(
+                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+
+                      child: Expanded(
+                        flex: 7,
+                        child: Container(
+                          child: Text(
+                            'Some think that I should know what 3 million people working for the Saudi government do daily", says Mohammed bin Salman',
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        child: Image.network(
+                          'https://www.thehindu.com/news/national/73kpsr/article26333229.ece/ALTERNATES/FREE_460/TH22KRASALMAN',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
