@@ -31,34 +31,46 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          centerTitle: true,
+          //centerTitle: true,
           //style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
           title: Text(
             'New York Times',
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontFamily: 'PT_Serif',
+            ),
           ),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text(
                   'PM Modi seeks ideas for his IIT-Madras ',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                  //textAlign: TextAlign.left,
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PT_Serif',
+                    fontSize: 16,
+                  ),
+                  //
                 ),
                 Row(
                   //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Container(
-
                       child: Expanded(
                         flex: 7,
                         child: Container(
                           child: Text(
-                            'In Chennai, PM Modi would also \n participate in the prize distribution \nceremony  of the Singapore-India Hackathon.   ',
+                            'In Chennai, PM Modi would also participate in the prize distribution ceremony  of the Singapore-India Hackathon.',
+                            style: TextStyle(),
                           ),
                         ),
                       ),
@@ -73,27 +85,64 @@ void main() {
                     ),
                   ],
                 ),
-                Text('Politics     8h Ago',
-                  textAlign: TextAlign.left,),
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'Politics     8h Ago',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Container(
+                      width: 150,
+                      height: 3,
+                      color: Colors.white,
+                      child: Row(),
+                      //margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.share,
+                        color: Colors.grey,
+                        size: 20.0,
 
-                blackline,blackline,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.bookmark_border,
+                        color: Colors.grey,
+                        size: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+                blackline,
 
                 Text(
                   'Flooded Roads, Stranded Locals and Warning of More Rains',
-                  style: TextStyle(fontWeight: FontWeight.bold),
                   textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PT_Serif',
+                    fontSize: 16,
+                  ),
+                  //
                 ),
                 Row(
                   //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Container(
-
                       child: Expanded(
                         flex: 7,
                         child: Container(
                           child: Text(
                             'Patna Nagar Nigam personnel, donning yellow raincoats, could be seen at various spots trying to unclog the manholes that have been choked by polythene and debris.',
+                            style: TextStyle(),
                           ),
                         ),
                       ),
@@ -108,27 +157,65 @@ void main() {
                     ),
                   ],
                 ),
-                Text('Politics     8h Ago',
-                  textAlign: TextAlign.left,),
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'Local     12h Ago',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Container(
+                      width: 150,
+                      height: 3,
+                      color: Colors.white,
+                      child: Row(),
+                      //margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.share,
+                        color: Colors.grey,
+                        size: 20.0,
 
-                blackline,blackline,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.bookmark_border,
+                        color: Colors.grey,
+                        size: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+                blackline,
+
 
                 Text(
-                  ' Saudi crown prince denies ordering Jamal Khashoggi killing',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  'Saudi crown prince denies ordering Jamal Khashoggi killing',
                   textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PT_Serif',
+                    fontSize: 16,
+                  ),
+                  //
                 ),
                 Row(
                   //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Container(
-
                       child: Expanded(
                         flex: 7,
                         child: Container(
                           child: Text(
-                            'Some think that I should know what 3 million people working for the Saudi government do daily", says Mohammed bin Salman',
+                            '"Some think that I should know what 3 million people working for the Saudi government do daily", says Mohammed bin Salman',
+                            style: TextStyle(),
                           ),
                         ),
                       ),
@@ -143,8 +230,43 @@ void main() {
                     ),
                   ],
                 ),
-                Text('Politics     8h Ago',
-                  textAlign: TextAlign.left,),
+                Row(
+                  children: <Widget>[
+                    Text(
+                      'International     3h Ago',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Container(
+                      width: 130,
+                      height: 3,
+                      color: Colors.white,
+                      child: Row(),
+                      //margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.share,
+                        color: Colors.grey,
+                        size: 20.0,
+
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.bookmark_border,
+                        color: Colors.grey,
+                        size: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+                blackline,
+
               ],
             ),
           ),
@@ -152,4 +274,8 @@ void main() {
       ),
     ),
   );
+}
+
+void contentCopy() {
+  print('Content Copied.');
 }
